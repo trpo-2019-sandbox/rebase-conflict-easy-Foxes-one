@@ -29,6 +29,7 @@ int main()
 >>>>>>> Count array items with macro
 
     printf("Array: ");
+<<<<<<< HEAD
     int i;
 <<<<<<< HEAD
     for (i = 0; i < 10; ++i) {
@@ -38,6 +39,17 @@ int main()
     for (i = 0; i < 10; ++i) {
 >>>>>>> Count array items with macro
         printf("%d ", arr[i]);
+||||||| merged common ancestors
+    int i;
+    for (i = 0; i < 10; ++i) {
+        printf("%d ", arr[i]);
+=======
+    int i = 0;
+    printf("%d", arr[i]);
+    ++i;
+    for (; i < N_ELEMENTS(arr); ++i) {
+        printf(", %d", arr[i]);
+>>>>>>> Separate elements with comma
     }
     printf("\n");
 
